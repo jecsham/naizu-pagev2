@@ -1,3 +1,4 @@
+import { PlayNowHero } from '@/components/play-now-hero';
 import Link from 'next/link';
 
 export default function Home() {
@@ -11,15 +12,7 @@ export default function Home() {
           experience like no other.
         </p>
 
-        <div className="flex flex-col items-center mb-8">
-          <h2 className="text-2xl font-bold mb-2">Play now!</h2>
-          <div className="flex justify-center items-center gap-4">
-            <div className="bg-[var(--secondary)] px-6 py-3 rounded-md border-2 border-dashed border-[var(--border)]">
-              <code className="text-xl font-mono">play.naizu.net</code>
-            </div>
-          </div>
-          <small className="text-gray-500 mt-2">1.21.+</small>
-        </div>
+        <PlayNowHero />
 
         <div className="card max-w-4xl mb-12 text-left">
           <h2 className="text-2xl font-bold mb-4">About Our Server</h2>
