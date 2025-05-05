@@ -1,4 +1,5 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #121212;
@@ -6,8 +7,14 @@
   --primary: #8c43ff;
   --primary-hover: #6b2bff;
   --secondary: #1a1a1a;
+  --border: #414141;
   --accent: #50fa7b;
   --discord: #5864f2;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
@@ -39,7 +46,7 @@ body {
 }
 
 .nav-link {
-  @apply font-medium transition-colors duration-200;
+  @apply text-xl font-bold transition-colors duration-200;
 }
 
 .nav-link:hover {

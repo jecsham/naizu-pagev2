@@ -4,14 +4,22 @@ export default function Home() {
   return (
     <main className="container mx-auto py-12 px-4">
       <div className="flex flex-col items-center text-center">
-        <h1 className="text-5xl font-bold mb-6 bg-clip-text text-[var(--accent)]">
-          Welcome to Naizu SMP
-        </h1>
+        <h1 className="text-5xl font-bold mb-6 bg-clip-text text-[var(--accent)]">Welcome to Naizu SMP</h1>
 
         <p className="text-xl mb-8 max-w-2xl">
           Just another SMP server, but better. We focus on community, creativity, and fun in a survival multiplayer
           experience like no other.
         </p>
+
+        <div className="flex flex-col items-center mb-8">
+          <h2 className="text-2xl font-bold mb-2">Play now!</h2>
+          <div className="flex justify-center items-center gap-4">
+            <div className="bg-[var(--secondary)] px-6 py-3 rounded-md border-2 border-dashed border-[var(--border)]">
+              <code className="text-xl font-mono">play.naizu.net</code>
+            </div>
+          </div>
+          <small className="text-gray-500 mt-2">1.21.+</small>
+        </div>
 
         <div className="card max-w-4xl mb-12 text-left">
           <h2 className="text-2xl font-bold mb-4">About Our Server</h2>
@@ -26,7 +34,11 @@ export default function Home() {
         </div>
 
         <div className="flex gap-6 flex-wrap justify-center">
-          <a className="btn discord" href="https://discord.gg/your-discord-link" target="_blank" rel="noopener noreferrer">
+          <a
+            className="btn discord"
+            href="https://discord.gg/your-discord-link"
+            target="_blank"
+            rel="noopener noreferrer">
             Join Our Discord
           </a>
           <Link href="/rules" className="btn">

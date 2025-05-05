@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
   variants: {
     extend: {
       textOpacity: ['hover'],
     },
   },
-}
+};
