@@ -9,9 +9,4 @@ module.exports = {
     extend: {},
   },
   plugins: [require('@tailwindcss/typography')],
-  variants: {
-    extend: {
-      textOpacity: ['hover'],
-    },
-  },
 };

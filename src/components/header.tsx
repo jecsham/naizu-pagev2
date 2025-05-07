@@ -3,9 +3,21 @@
 import Link from 'next/link';
 import { PlayNowHeader } from './play-now-header';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  const isActiveRoute = (route: string) => {
+    console.log('isActiveRoute', pathname, route);
+    if (route === '' && pathname === '/') {
+      return true;
+    } else if (route !== '') {
+      return pathname.includes(`/${route}`);
+    }
+    return false;
+  };
 
   return (
     <header className="bg-[var(--secondary)] py-4 px-6 sticky top-0 z-10">
@@ -44,14 +56,33 @@ export function Header() {
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex justify-center gap-6 items-center">
-          <Link href="/" className="nav-link">
+          <Link
+            href="/"
+            className={`${
+              isActiveRoute('') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+            } nav-link transition-all duration-300 ease-in-out`}>
             Home
           </Link>
-          <Link href="/rules" className="nav-link">
+          <Link
+            href="/rules"
+            className={`${
+              isActiveRoute('rules') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+            } nav-link transition-all duration-300 ease-in-out`}>
             Rules
           </Link>
-          <Link href="/wiki" className="nav-link">
+          <Link
+            href="/wiki"
+            className={`${
+              isActiveRoute('wiki') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+            } nav-link transition-all duration-300 ease-in-out`}>
             Wiki
+          </Link>
+          <Link
+            href="/store"
+            className={`${
+              isActiveRoute('store') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+            } nav-link transition-all duration-300 ease-in-out`}>
+            Store
           </Link>
           <PlayNowHeader />
         </nav>
@@ -61,14 +92,33 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden mt-4 pb-2">
           <nav className="flex flex-col space-y-4">
-            <Link href="/" className="nav-link block py-2">
+            <Link
+              href="/"
+              className={`${
+                isActiveRoute('') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+              } nav-link transition-all duration-300 ease-in-out`}>
               Home
             </Link>
-            <Link href="/rules" className="nav-link block py-2">
+            <Link
+              href="/rules"
+              className={`${
+                isActiveRoute('rules') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+              } nav-link transition-all duration-300 ease-in-out`}>
               Rules
             </Link>
-            <Link href="/wiki" className="nav-link block py-2">
+            <Link
+              href="/wiki"
+              className={`${
+                isActiveRoute('wiki') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+              } nav-link transition-all duration-300 ease-in-out`}>
               Wiki
+            </Link>
+            <Link
+              href="/store"
+              className={`${
+                isActiveRoute('store') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+              } nav-link transition-all duration-300 ease-in-out`}>
+              Store
             </Link>
             <div className="pt-2 border-t border-gray-700">
               <PlayNowHeader />

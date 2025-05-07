@@ -46,13 +46,9 @@ body {
 }
 
 .nav-link {
-  @apply text-xl font-bold transition-colors duration-200;
+  @apply text-xl font-bold py-1;
 }
 
 .nav-link:hover {
   @apply opacity-70;
-}
-
-.nav-link.active {
-  @apply font-bold text-[var(--accent)];
 }
