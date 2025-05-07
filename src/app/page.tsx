@@ -50,22 +50,40 @@ export default function Home() {
             Take a look at our <Link href="/wiki/overview">wiki</Link> for more information about the server, including
             rules, commands, and other useful information.
           </p>
+
+          <div className="flex justify-center">
+            <Link href="/wiki" className="btn">
+              Wiki
+            </Link>
+          </div>
         </div>
 
-        <div className="flex gap-6 flex-wrap justify-center">
-          <a
-            className="btn discord"
-            href="https://discord.gg/your-discord-link"
-            target="_blank"
-            rel="noopener noreferrer">
-            Join Our Discord
-          </a>
-          <Link href="/rules" className="btn">
-            Server Rules
-          </Link>
-          <Link href="/wiki" className="btn">
-            Server Wiki
-          </Link>
+        <div className="card max-w-4xl mb-12 text-left">
+          <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">Server Rules</h2>
+          <p className="mb-4">
+            These rules are designed to ensure a fun and fair experience for all players. By joining the server, you
+            agree to follow these guidelines.
+          </p>
+
+          <div className="flex justify-center">
+            <Link href="/rules" className="btn">
+              Server Rules
+            </Link>
+          </div>
+        </div>
+
+        <div className="card max-w-4xl mb-12 text-left">
+          <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">Join Our Discord!</h2>
+          <p className="mb-4">
+            Join our Discord server to stay updated on server news, events, and community discussions. We also have a
+            dedicated support channel for any questions or issues you may have.
+          </p>
+
+          <div className="flex justify-center">
+            <a className="btn discord" href="https://discord.gg/DNpyAC2Bwn" target="_blank" rel="noopener noreferrer">
+              Discord
+            </a>
+          </div>
         </div>
       </div>
     </main>

@@ -90,13 +90,13 @@ export function Header() {
             } nav-link transition-all duration-300 ease-in-out`}>
             Wiki
           </Link>
-          <Link
+          {/* <Link
             href="/store"
             className={`${
               isActiveRoute('store') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
             } nav-link transition-all duration-300 ease-in-out`}>
             Store
-          </Link>
+          </Link> */}
           <PlayNowHeader />
         </nav>
       </div>
