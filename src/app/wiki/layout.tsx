@@ -92,7 +92,7 @@ export default function Wiki({ children }: { children: React.ReactNode }) {
         <div className="md:flex-grow md:max-w-4xl">
           {/* Land Protection Section */}
           <section>
-            <div className="card p-6 rounded-lg shadow-md prose prose-stone prose-code:before:content-none prose-code:after:content-none prose-code:bg-gray-800 prose-code:p-1 prose-code:rounded-md prose-code: prose-strong:text-white  !max-w-none prose-headings:mt-8 prose-headings:font-semibold prose-headings:text-white text-white prose-code:text-gray-400">
+            <div className="card p-6 rounded-lg prose prose-invert prose-code:before:content-none prose-code:after:content-none prose-code:bg-white/10 prose-code:p-1 prose-code:rounded !max-w-none prose-headings:mt-4">
               {children}
             </div>
           </section>
