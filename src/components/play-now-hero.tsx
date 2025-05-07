@@ -27,7 +27,7 @@ export const PlayNowHero = () => {
 
   return (
     <div className="flex flex-col items-center mb-8">
-      <h2 className="text-2xl font-bold mb-2">Play now!</h2>
+      <h2 className="text-2xl font-bold mb-2">Join now!</h2>
       <div className="flex justify-center items-center gap-4">
         <div className="bg-[var(--secondary)] px-6 py-3 rounded-md border-2 border-dashed border-[var(--border)] flex items-center">
           <code className="text-xl font-mono">play.naizu.net</code>

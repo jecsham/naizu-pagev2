@@ -76,13 +76,13 @@ export function Header() {
             } nav-link transition-all duration-300 ease-in-out`}>
             Home
           </Link>
-          <Link
+          {/* <Link
             href="/rules"
             className={`${
               isActiveRoute('rules') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
             } nav-link transition-all duration-300 ease-in-out`}>
             Rules
-          </Link>
+          </Link> */}
           <Link
             href="/wiki"
             className={`${
