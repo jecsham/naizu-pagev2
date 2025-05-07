@@ -35,21 +35,23 @@ export default function Home() {
         </div>
 
         <div className="card max-w-4xl mb-12 text-left">
-          <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">About Our Server</h2>
-          <p className="mb-4">
-            Naizu SMP is a carefully curated survival experience with minimal plugins to enhance gameplay without
-            breaking the vanilla feel.
-          </p>
+          <div className="prose prose-invert !max-w-none">
+            <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">About Our Server</h2>
+            <p className="mb-4">
+              Naizu SMP is a carefully curated survival experience with minimal plugins to enhance gameplay without
+              breaking the vanilla feel.
+            </p>
 
-          <p className="mb-4">
-            We focus on creating a friendly and welcoming community for players who just want to enjoy Minecraft —
-            whether you're here to build a quiet base, automate your farms, or fine-tune redstone.
-          </p>
+            <p className="mb-4">
+              We focus on creating a friendly and welcoming community for players who just want to enjoy Minecraft —
+              whether you're here to build a quiet base, automate your farms, or fine-tune redstone.
+            </p>
 
-          <p className="mb-4">
-            Take a look at our <Link href="/wiki/overview">wiki</Link> for more information about the server, including
-            rules, commands, and other useful information.
-          </p>
+            <p className="mb-4">
+              Take a look at our <Link href="/wiki/overview">wiki</Link> for more information about the server,
+              including rules, commands, and other useful information.
+            </p>
+          </div>
 
           <div className="flex justify-center">
             <Link href="/wiki" className="btn">
@@ -59,11 +61,13 @@ export default function Home() {
         </div>
 
         <div className="card max-w-4xl mb-12 text-left">
-          <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">Server Rules</h2>
-          <p className="mb-4">
-            These rules are designed to ensure a fun and fair experience for all players. By joining the server, you
-            agree to follow these guidelines.
-          </p>
+          <div className="prose prose-invert !max-w-none">
+            <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">Server Rules</h2>
+            <p className="mb-4">
+              These rules are designed to ensure a fun and fair experience for all players. By joining the server, you
+              agree to follow these guidelines.
+            </p>
+          </div>
 
           <div className="flex justify-center">
             <Link href="/rules" className="btn">
@@ -73,11 +77,13 @@ export default function Home() {
         </div>
 
         <div className="card max-w-4xl mb-12 text-left">
-          <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">Join Our Discord!</h2>
-          <p className="mb-4">
-            Join our Discord server to stay updated on server news, events, and community discussions. We also have a
-            dedicated support channel for any questions or issues you may have.
-          </p>
+          <div className="prose prose-invert !max-w-none">
+            <h2 className="text-2xl font-bold mb-4 text-[var(--accent)]">Join Our Discord!</h2>
+            <p className="mb-4">
+              Join our Discord server to stay updated on server news, events, and community discussions. We also have a
+              dedicated support channel for any questions or issues you may have.
+            </p>
+          </div>
 
           <div className="flex justify-center">
             <a className="btn discord" href="https://discord.gg/DNpyAC2Bwn" target="_blank" rel="noopener noreferrer">
