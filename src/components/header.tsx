@@ -2,12 +2,13 @@
 
 import Link from 'next/link';
 import { PlayNowHeader } from './play-now-header';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const isActiveRoute = (route: string) => {
     console.log('isActiveRoute', pathname, route);
@@ -18,6 +19,18 @@ export function Header() {
     }
     return false;
   };
+
+  // Control menu height for animations
+  useEffect(() => {
+    if (mobileMenuRef.current) {
+      if (isMobileMenuOpen) {
+        const height = mobileMenuRef.current.scrollHeight;
+        mobileMenuRef.current.style.maxHeight = `${height}px`;
+      } else {
+        mobileMenuRef.current.style.maxHeight = '0px';
+      }
+    }
+  }, [isMobileMenuOpen]);
 
   return (
     <header className="bg-[var(--secondary)] py-4 px-6 sticky top-0 z-10">
@@ -36,7 +49,7 @@ export function Header() {
           {isMobileMenuOpen ? (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 transition-transform duration-300"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor">
@@ -45,7 +58,7 @@ export function Header() {
           ) : (
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 transition-transform duration-300"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor">
@@ -88,10 +101,14 @@ export function Header() {
         </nav>
       </div>
 
-      {/* Mobile menu (expandable) */}
-      {isMobileMenuOpen && (
-        <div className="md:hidden mt-4 pb-2">
-          <nav className="flex flex-col space-y-4">
+      {/* Mobile menu (expandable) with animation */}
+      <div
+        ref={mobileMenuRef}
+        className="md:hidden overflow-hidden transition-all duration-300 ease-in-out"
+        style={{ maxHeight: '0px' }}
+      >
+        <div className="mt-4 pb-2">
+          <nav className="flex flex-col space-y-4 opacity-100 transform transition-opacity duration-300">
             <Link
               href="/"
               className={`${
@@ -125,7 +142,7 @@ export function Header() {
             </div>
           </nav>
         </div>
-      )}
+      </div>
     </header>
   );
 }
