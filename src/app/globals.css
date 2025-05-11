@@ -8,7 +8,7 @@
   --primary-hover: #6b2bff;
   --secondary: #1a1a1a;
   --border: #414141;
-  --accent: #50fa7b;
+  --accent: #f9f906;
   --discord: #5864f2;
 }
 
@@ -27,7 +27,7 @@ body {
 }
 
 .btn {
-  @apply px-6 py-3 rounded-lg font-bold text-white transition-all duration-200;
+  @apply px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-white transition-all duration-200 text-sm md:text-base;
   background-color: var(--primary);
 }
 
@@ -41,14 +41,30 @@ body {
 }
 
 .card {
-  @apply p-6 rounded-xl;
+  @apply p-4 md:p-6 rounded-xl;
   background-color: var(--secondary);
 }
 
 .nav-link {
-  @apply text-xl font-bold py-1;
+  @apply text-base md:text-xl font-bold py-1;
 }
 
 .nav-link:hover {
   @apply opacity-70;
+}
+
+.animation-big-and-small {
+  animation: big-and-small 3s ease-in-out infinite alternate;
+}
+
+@keyframes big-and-small {
+  0% {
+    transform: scale(0.85) rotate(3deg);
+  }
+  50% {
+    transform: scale(1) rotate(0deg);
+  }
+  100% {
+    transform: scale(0.85) rotate(-3deg);
+  }
 }

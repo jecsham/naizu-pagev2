@@ -1,0 +1,82 @@
+[
+  {
+    "slug": "home",
+    "index": 800,
+    "title": "Get a Home",
+    "sections": [
+      {
+        "id": "notes",
+        "title": "Notes"
+      },
+      {
+        "id": "commands",
+        "title": "Commands"
+      }
+    ]
+  },
+  {
+    "slug": "overview",
+    "index": 1000,
+    "title": "Overview",
+    "sections": [
+      {
+        "id": "the-overworld",
+        "title": "The Overworld"
+      },
+      {
+        "id": "the-nether-&-the-end",
+        "title": "The Nether & The End"
+      },
+      {
+        "id": "notes",
+        "title": "Notes"
+      }
+    ]
+  },
+  {
+    "slug": "protection",
+    "index": 900,
+    "title": "Land Protection",
+    "sections": [
+      {
+        "id": "notes",
+        "title": "Notes"
+      },
+      {
+        "id": "commands",
+        "title": "Commands"
+      }
+    ]
+  },
+  {
+    "slug": "rules",
+    "index": 990,
+    "title": "Server Rules",
+    "sections": [
+      {
+        "id": "no-cheating",
+        "title": "No Cheating"
+      },
+      {
+        "id": "world-usage",
+        "title": "World Usage"
+      },
+      {
+        "id": "chat-and-player-conduct",
+        "title": "Chat and Player Conduct"
+      },
+      {
+        "id": "exploits-and-bugs",
+        "title": "Exploits and Bugs"
+      },
+      {
+        "id": "general-conduct",
+        "title": "General Conduct"
+      },
+      {
+        "id": "consequences",
+        "title": "Consequences"
+      }
+    ]
+  }
+]

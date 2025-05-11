@@ -16,9 +16,9 @@ export default function Wiki({ children }: { children: React.ReactNode }) {
     return pathname.includes('/wiki/' + route);
   };
 
-  const isActiveHash = (cHash: string) => {
+  const isActiveHash = (route:string , cHash: string) => {
     if (!hash) return false;
-    return hash.includes(cHash);
+    return pathname.includes(route) && hash.includes(cHash);
   };
 
   return (
@@ -76,7 +76,7 @@ export default function Wiki({ children }: { children: React.ReactNode }) {
                         <Link
                           href={`/wiki/${page.slug}#${subsection.id}`}
                           className={`${
-                            isActiveHash(subsection.id) ? 'text-[var(--accent)]/60' : 'text-gray-500'
+                            isActiveHash(page.slug, subsection.id) ? 'text-[var(--accent)]/60' : 'text-gray-500'
                           }  hover:text-white text-left`}>
                           {subsection.title}
                         </Link>

@@ -27,13 +27,7 @@ export function Footer() {
 
           {/* Column 3 - Copyright and Email */}
           <div className="flex flex-col items-center md:items-end">
-            <p className="mb-2">Copyright © {new Date().getFullYear()} Naizu</p>
-            <a
-              href="mailto:contact@naizu.net"
-              className="hover:text-gray-300 transition"
-            >
-              contact@naizu.net
-            </a>
+            <p className="mb-2">Copyright © 2020 - {new Date().getFullYear()}</p>
           </div>
         </div>
       </div>

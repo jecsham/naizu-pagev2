@@ -26,16 +26,16 @@ export const PlayNowHeader = () => {
   }, [textCopied]);
 
   return (
-    <div className="w-fit bg-[var(--secondary)] py-1 px-3 rounded-md border-1 border-dashed border-[var(--border)] flex items-center">
-      <code className=" font-mono">play.naizu.net</code>
+    <div className="w-fit bg-[var(--secondary)] py-1 px-2 md:px-3 rounded-md border-1 border-dashed border-[var(--border)] flex items-center">
+      <code className="text-xs md:text-sm font-mono">play.naizu.net</code>
       <button
-        className="ml-3 p-1.5 rounded-md hover:bg-[var(--accent)]/20 transition-colors"
+        className="ml-1 md:ml-3 p-1 md:p-1.5 rounded-md hover:bg-[var(--accent)]/20 transition-colors"
         onClick={handleCopyClick}
         title="Copy IP address">
         {textCopied ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-4 w-4 md:h-5 md:w-5"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -47,7 +47,7 @@ export const PlayNowHeader = () => {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-5 w-5"
+            className="h-4 w-4 md:h-5 md:w-5"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"

@@ -27,12 +27,12 @@ export const PlayNowHero = () => {
 
   return (
     <div className="flex flex-col items-center mb-8">
-      <h2 className="text-2xl font-bold mb-2">Join now!</h2>
+      <h2 className="text-xl md:text-2xl font-bold mb-2">Join now!</h2>
       <div className="flex justify-center items-center gap-4">
-        <div className="bg-[var(--secondary)] px-6 py-3 rounded-md border-2 border-dashed border-[var(--border)] flex items-center">
-          <code className="text-xl font-mono">play.naizu.net</code>
+        <div className="bg-[var(--secondary)] px-3 md:px-6 py-2 md:py-3 rounded-md border-2 border-dashed border-[var(--border)] flex items-center">
+          <code className="text-base md:text-xl font-mono">play.naizu.net</code>
           <button
-            className="ml-3 p-1.5 rounded-md hover:bg-[var(--accent)]/20 transition-colors"
+            className="ml-2 md:ml-3 p-1.5 rounded-md hover:bg-[var(--accent)]/20 transition-colors"
             onClick={handleCopyClick}
             title="Copy IP address">
             {textCopied ? (
@@ -64,7 +64,7 @@ export const PlayNowHero = () => {
           </button>
         </div>
       </div>
-      <small className="text-gray-500 mt-2">1.21.+</small>
+      <small className="text-gray-500 mt-2">1.21.4+</small>
     </div>
   );
 };
