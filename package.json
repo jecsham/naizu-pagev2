@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "npm run gen-wiki && next dev",
-    "build": "npm run gen-wiki && next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "gen-wiki": "node scripts/wiki-generator.js"
