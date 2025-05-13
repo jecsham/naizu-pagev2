@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import { Header } from '@/components/header';
 import { Footer } from '@/components/footer';
+import AhrefClient from '@/components/ahref-client';
 
 export const metadata: Metadata = {
   title: 'Naizu SMP - Carefully curated survival experience',
@@ -19,6 +20,7 @@ export default function RootLayout({
       <body className="flex flex-col min-h-screen">
         <Header />
         <div className="flex-grow">{children}</div>
+        <AhrefClient />
         <Footer />
       </body>
     </html>

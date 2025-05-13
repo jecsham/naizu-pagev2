@@ -6,7 +6,7 @@ These rules are designed to ensure a fun and fair experience for all players. By
 ### No Cheating
 
 - Hacked clients, x-ray, auto-clickers, or any **unfair** modifications are strictly prohibited.
-- Only allowed mods: Performance mods (e.g., Sodium, OptiFine) and mods provided by well-known launchers (e.g., Lunar Client, Badlion Client).
+- Only allowed mods: Performance mods (e.g., Sodium, OptiFine) and mods provided by legit clients (e.g., Lunar Client, Badlion Client).
 - Cheating is not tolerated and will result in a permanent ban without warning!
 
 ### World Usage

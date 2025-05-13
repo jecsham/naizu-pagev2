@@ -7,7 +7,7 @@ Protect your builds and items from other players by claiming land. Learn how to 
 
 - Each player start with a limit of **4** chunks. It will increase automatically as you play. We do this to prevent land-grabbing.
 - You can claim land in the **Overworld** only.
-- The chunk cap is **25**. We may increase this limit in the future.
+- The chunk cap is **50**. We may increase this limit in the future.
 
 ### Commands
 
