@@ -9,7 +9,7 @@ index: 700
 ### Why Mounts Instead of Teleportation?
 
 Although this is a vanilla-style SMP, we chose to add mounts as a **more immersive and balanced alternative** to teleport commands. Instant travel breaks the flow and scale of the world. Mounts, on the other hand, offer a convenient way to reach nearby places while still respecting time, distance, and terrain.
-Home an spawn commands will
+Home an spawn commands will continues to work as usual, but we encourage you to use them wisely.
 
 ### Limitations & Notes
 
