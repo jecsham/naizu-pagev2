@@ -15,6 +15,25 @@
     ]
   },
   {
+    "slug": "mounts",
+    "index": 700,
+    "title": "Traveling the World with Mounts",
+    "sections": [
+      {
+        "id": "why-mounts-instead-of-teleportation?",
+        "title": "Why Mounts Instead of Teleportation?"
+      },
+      {
+        "id": "limitations-&-notes",
+        "title": "Limitations & Notes"
+      },
+      {
+        "id": "commands",
+        "title": "Commands"
+      }
+    ]
+  },
+  {
     "slug": "overview",
     "index": 1000,
     "title": "Overview",
