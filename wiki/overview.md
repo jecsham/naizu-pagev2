@@ -18,8 +18,8 @@ This is where most of the gameplay happens — building, exploring, surviving.
 
 **Key features:**
 
-- **Spawn Protection**: 150-block radius around spawn.
-- **World Border**: 100,000 blocks from spawn (with plans to expand later).
+- **Spawn Protection**: 50-block radius around spawn.
+- **World Border**: 20,000 blocks from spawn (with plans to expand later on every minecraft update).
 - **PvP is ON!** Except in spawn and protected chunks by players.
 
 ### The Nether & The End

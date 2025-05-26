@@ -28,6 +28,7 @@ export function Footer() {
           {/* Column 3 - Copyright and Email */}
           <div className="flex flex-col items-center md:items-end">
             <p className="mb-2">Copyright © 2020 - {new Date().getFullYear()}</p>
+            <p className="text-sm">Not affiliated with Mojang Studios</p>
           </div>
         </div>
       </div>

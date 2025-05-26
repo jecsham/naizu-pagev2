@@ -53,7 +53,7 @@ export default function Wiki({ children }: { children: React.ReactNode }) {
         <aside
           className={`
           ${isMobileSidebarOpen ? 'fixed inset-0 z-40 bg-black/95 overflow-y-auto pb-20' : 'hidden'}
-          md:block md:sticky md:top-24 md:h-[calc(100vh-6rem)] md:w-64 md:flex-shrink-0 md:overflow-y-auto md:pr-4
+          md:block md:sticky md:top-24  md:w-64 md:flex-shrink-0 md:overflow-y-auto md:pr-4
         `}>
           <nav className="p-4 md:p-0">
             <h2 className="text-xl font-bold mb-4">Wiki Contents</h2>
