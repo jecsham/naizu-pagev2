@@ -11,7 +11,6 @@ export function Header() {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
   const isActiveRoute = (route: string) => {
-    console.log('isActiveRoute', pathname, route);
     if (route === '' && pathname === '/') {
       return true;
     } else if (route !== '') {
@@ -90,13 +89,13 @@ export function Header() {
             } nav-link transition-all duration-300 ease-in-out`}>
             Wiki
           </Link>
-          {/* <Link
+          <Link
             href="/store"
             className={`${
               isActiveRoute('store') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
             } nav-link transition-all duration-300 ease-in-out`}>
             Store
-          </Link> */}
+          </Link>
           <PlayNowHeader />
         </nav>
       </div>
@@ -117,11 +116,11 @@ export function Header() {
               Home
             </Link>
             <Link
-              href="/rules"
+              href="/store"
               className={`${
-                isActiveRoute('rules') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
+                isActiveRoute('store') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
               } nav-link transition-all duration-300 ease-in-out`}>
-              Rules
+              Store
             </Link>
             <Link
               href="/wiki"

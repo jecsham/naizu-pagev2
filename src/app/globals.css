@@ -10,6 +10,8 @@
   --border: #414141;
   --accent: #f9f906;
   --discord: #5864f2;
+  --danger: #ff4d4d;
+  --danger-hover: #ff1a1a;
 }
 
 html {
@@ -26,9 +28,26 @@ body {
   flex-direction: column;
 }
 
+.input-text {
+  @apply px-4 py-2 rounded-lg font-bold bg-white text-gray-600 transition-all duration-200 text-sm md:text-base w-full focus:outline-none;
+  border: 1px solid var(--border);
+}
+
+.input-text:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
 .btn {
-  @apply px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-white transition-all duration-200 text-sm md:text-base;
+  @apply px-4 py-2 md:px-6 md:py-3 rounded-lg font-bold text-white transition-all duration-200 text-sm md:text-base cursor-pointer;
   background-color: var(--primary);
+}
+
+.btn.btn-danger {
+  background-color: var(--danger);
+}
+
+.btn.btn-sm {
+  @apply px-3 py-2 text-xs;
 }
 
 .btn.discord {
@@ -37,7 +56,15 @@ body {
 
 .btn:hover {
   background-color: var(--primary-hover);
-  transform: translateY(-2px);
+  transform: scale(1.05);
+}
+
+.btn:disabled {
+  @apply opacity-50 cursor-not-allowed;
+}
+
+.btn.btn-danger:hover {
+  background-color: var(--danger-hover);
 }
 
 .card {

@@ -97,5 +97,39 @@
         "title": "Consequences"
       }
     ]
+  },
+  {
+    "slug": "titles",
+    "index": 500,
+    "title": "Player Titles",
+    "sections": [
+      {
+        "id": "how-to-get-a-title",
+        "title": "How to Get a Title"
+      },
+      {
+        "id": "how-to-use-a-title",
+        "title": "How to Use a Title"
+      },
+      {
+        "id": "list-of-titles",
+        "title": "List of titles"
+      }
+    ]
+  },
+  {
+    "slug": "vip",
+    "index": 600,
+    "title": "VIP Rank",
+    "sections": [
+      {
+        "id": "exclusive-commands",
+        "title": "Exclusive commands"
+      },
+      {
+        "id": "cosmetics",
+        "title": "Cosmetics"
+      }
+    ]
   }
 ]
