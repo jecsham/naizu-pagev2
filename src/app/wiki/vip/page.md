@@ -14,6 +14,6 @@ If you enjoy the server and want to contribute, consider purchasing the [VIP Ran
 ### Cosmetics
 - VIP prefix in front of your name.
 - White color in chat.
-- Possibility to equip any title (`/titles`).
+- Possibility to equip any title (Use `/titles`).
 
 > Please note that the server is relative new and we are still working on adding new features.
