@@ -26,7 +26,7 @@ export default async function Products() {
   };
 
   return (
-    <div className="flex justify-center gap-8 mb-12 w-full max-w-6xl">
+    <>
       {products.map((product: any) => (
         <div key={product.id} className="card flex flex-col h-full w-full max-w-sm">
           <div className={`bg-gradient-to-r ${headerClassResolver(product.id)} p-1 rounded-t-xl`}>
@@ -47,22 +47,21 @@ export default async function Products() {
                 {product.features.map((feature: any, index: number) => (
                   <li key={feature.description} className="mb-2">
                     {feature.description}{' '}
-                    {feature.link
-                      ?
-                        (
-                          <a href={feature.link.href} className="underline" target="_blank" rel="noopener noreferrer">
-                            ({feature.link.text})
-                          </a>
-                        )
-                      : ''}{' '}
+                    {feature.link ? (
+                      <a href={feature.link.href} className="underline" target="_blank" rel="noopener noreferrer">
+                        ({feature.link.text})
+                      </a>
+                    ) : (
+                      ''
+                    )}{' '}
                   </li>
                 ))}
               </ul>
             )}
-            <BuyButton product={product}/>
+            <BuyButton product={product} />
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }

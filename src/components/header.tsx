@@ -116,13 +116,6 @@ export function Header() {
               Home
             </Link>
             <Link
-              href="/store"
-              className={`${
-                isActiveRoute('store') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
-              } nav-link transition-all duration-300 ease-in-out`}>
-              Store
-            </Link>
-            <Link
               href="/wiki"
               className={`${
                 isActiveRoute('wiki') ? 'bg-[var(--primary)] px-4 py-1 rounded-md' : ''
