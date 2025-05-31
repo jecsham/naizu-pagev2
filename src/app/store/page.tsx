@@ -17,7 +17,9 @@ export default function StorePage() {
 
         <MinecraftLogin />
         <Suspense fallback={<SuspenseFallback />}>
-          <Products />
+          <div className="flex justify-center gap-8 mb-12 w-full max-w-6xl flex-wrap">
+            <Products />
+          </div>
         </Suspense>
 
         <div className="card max-w-4xl mb-12 text-left">
@@ -28,7 +30,7 @@ export default function StorePage() {
           </p>
           <p className="mb-4"></p>
           <div className="flex justify-center mt-6">
-            <a className='btn discord' href="http://discord.gg/naizu" target="_blank" rel="noopener noreferrer">
+            <a className="btn discord" href="http://discord.gg/naizu" target="_blank" rel="noopener noreferrer">
               Join Discord
             </a>
           </div>
